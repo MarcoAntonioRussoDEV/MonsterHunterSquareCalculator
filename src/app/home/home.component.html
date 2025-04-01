@@ -1,12 +1,10 @@
-<app-navbar></app-navbar>
-
-
-<input type="text" class="input" />
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <mat-label>Favorite food</mat-label>
-    <input matInput placeholder="Ex. Pizza" value="Sushi">
-  </mat-form-field>
-
-</form>
-
+<div class="p-5">
+  <app-input
+    type="text"
+    label="danno"
+    placeholder="danno"
+    [(ngModel)]="danno"
+  />
+  <button (click)="calculate()" class="btn btn-accent">calcola</button>
+  <div>{{ result }}</div>
+</div>

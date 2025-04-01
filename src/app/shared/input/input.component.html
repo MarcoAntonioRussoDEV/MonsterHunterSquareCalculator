@@ -1,0 +1,13 @@
+<fieldset class="fieldset">
+  <legend class="fieldset-legend">{{ label }}</legend>
+  <input
+    [type]="type || 'text'"
+    class="input"
+    [placeholder]="placeholder"
+    [value]="value"
+    (input)="onInputChange($event)"
+    [required]="required"
+    [disabled]="disabled"
+  />
+  <p class="fieldset-label">{{ subLabel }}</p>
+</fieldset>
