@@ -1,9 +1,28 @@
 <div class="p-5">
+  <app-select
+    label="weapon"
+    placeholder="weapons"
+    (valueChange)="onWeaponChange($event)"
+    [options]="weapons"
+  />
   <app-input
+    type="number"
+    label="damage"
+    placeholder="damage"
+    (valueChange)="onDamageChange($event)"
+  />
+  <app-select
     type="text"
-    label="danno"
-    placeholder="danno"
-    [(ngModel)]="danno"
+    label="sharpness"
+    placeholder="sharpnesses"
+    (valueChange)="onSharpnessChange($event)"
+    [options]="sharpnesses"
+  />
+  <app-input
+    type="number"
+    label="affinity"
+    placeholder="affinity"
+    (valueChange)="onAffinityChange($event)"
   />
   <button (click)="calculate()" class="btn btn-accent">calcola</button>
   <div>{{ result }}</div>

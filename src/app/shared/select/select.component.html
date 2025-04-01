@@ -1,0 +1,17 @@
+<fieldset class="fieldset">
+  <legend class="fieldset-legend capitalize">{{ label }}</legend>
+  <select
+    class="select"
+    [(ngModel)]="inputValue"
+    [required]="required"
+    [disabled]="disabled"
+    (ngModelChange)="onValueChange()"
+    type="number"
+  >
+    <option disabled selected [value]="''">{{ placeholder }}</option>
+    <option *ngFor="let option of options" [ngValue]="option.id">
+      {{ option.name }}
+    </option>
+  </select>
+  <span class="fieldset-label">{{ subLabel }}</span>
+</fieldset>

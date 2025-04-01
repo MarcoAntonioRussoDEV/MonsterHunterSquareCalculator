@@ -1,11 +1,11 @@
 <fieldset class="fieldset">
-  <legend class="fieldset-legend">{{ label }}</legend>
+  <legend class="fieldset-legend capitalize">{{ label }}</legend>
   <input
     [type]="type || 'text'"
     class="input"
     [placeholder]="placeholder"
-    [value]="value"
-    (input)="onInputChange($event)"
+    [(ngModel)]="inputValue"
+    (ngModelChange)="onInputChange()"
     [required]="required"
     [disabled]="disabled"
   />
