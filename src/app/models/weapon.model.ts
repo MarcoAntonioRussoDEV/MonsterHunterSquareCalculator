@@ -3,4 +3,5 @@ export interface Weapon {
   name: string;
   shortName: string;
   classMultiplier: number;
+  icon: string;
 }

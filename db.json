@@ -4,7 +4,8 @@
       "id": 1,
       "name": "Greatsword",
       "shortName": "GS",
-      "classMultiplier": 4.8
+      "classMultiplier": 4.8,
+      "icon": "images/weapons/Greatsword.png"
     },
     {
       "id": 2,
@@ -121,7 +122,386 @@
   ],
   "monsters": [
     {
-      "name": "chatacabra"
+      "id": 1,
+      "name": "chatacabra",
+      "parts": [
+        {
+          "name": "Head",
+          "states": [
+            {
+              "state": "Default",
+              "values": {
+                "cutting": 60,
+                "impact": 65,
+                "pierce": 60,
+                "fire": 10,
+                "water": 5,
+                "thunder": 25,
+                "ice": 10,
+                "dragon": 0,
+                "stun": 100
+              }
+            },
+            {
+              "state": "Wounds",
+              "values": {
+                "cutting": 75,
+                "impact": 75,
+                "pierce": 75,
+                "fire": 10,
+                "water": 5,
+                "thunder": 30,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 100
+              }
+            },
+            {
+              "state": "Weak Point",
+              "values": {
+                "cutting": 90,
+                "impact": 90,
+                "pierce": 95,
+                "fire": 10,
+                "water": 5,
+                "thunder": 30,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 100
+              }
+            }
+          ]
+        },
+        {
+          "name": "Torso",
+          "states": [
+            {
+              "state": "Default",
+              "values": {
+                "cutting": 45,
+                "impact": 45,
+                "pierce": 45,
+                "fire": 10,
+                "water": 5,
+                "thunder": 20,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "Wounds",
+              "values": {
+                "cutting": 65,
+                "impact": 65,
+                "pierce": 65,
+                "fire": 10,
+                "water": 5,
+                "thunder": 30,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Left Foreleg",
+          "states": [
+            {
+              "state": "Default",
+              "values": {
+                "cutting": 60,
+                "impact": 60,
+                "pierce": 65,
+                "fire": 5,
+                "water": 5,
+                "thunder": 15,
+                "ice": 10,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "Breakable",
+              "values": {
+                "cutting": 75,
+                "impact": 75,
+                "pierce": 75,
+                "fire": 10,
+                "water": 5,
+                "thunder": 25,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "State_1",
+              "values": {
+                "cutting": 50,
+                "impact": 65,
+                "pierce": 50,
+                "fire": 0,
+                "water": 0,
+                "thunder": 15,
+                "ice": 10,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "State_2",
+              "values": {
+                "cutting": 50,
+                "impact": 65,
+                "pierce": 50,
+                "fire": 0,
+                "water": 0,
+                "thunder": 15,
+                "ice": 10,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "State_3",
+              "values": {
+                "cutting": 55,
+                "impact": 70,
+                "pierce": 55,
+                "fire": 0,
+                "water": 5,
+                "thunder": 15,
+                "ice": 10,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "Wounds",
+              "values": {
+                "cutting": 80,
+                "impact": 80,
+                "pierce": 80,
+                "fire": 0,
+                "water": 0,
+                "thunder": 15,
+                "ice": 10,
+                "dragon": 0,
+                "stun": 0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Right Foreleg",
+          "states": [
+            {
+              "state": "Default",
+              "values": {
+                "cutting": 60,
+                "impact": 60,
+                "pierce": 65,
+                "fire": 5,
+                "water": 5,
+                "thunder": 15,
+                "ice": 10,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "Breakable",
+              "values": {
+                "cutting": 75,
+                "impact": 75,
+                "pierce": 75,
+                "fire": 10,
+                "water": 5,
+                "thunder": 25,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "State_1",
+              "values": {
+                "cutting": 50,
+                "impact": 65,
+                "pierce": 50,
+                "fire": 0,
+                "water": 0,
+                "thunder": 15,
+                "ice": 10,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "State_2",
+              "values": {
+                "cutting": 50,
+                "impact": 65,
+                "pierce": 50,
+                "fire": 0,
+                "water": 0,
+                "thunder": 15,
+                "ice": 10,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "State_3",
+              "values": {
+                "cutting": 55,
+                "impact": 70,
+                "pierce": 55,
+                "fire": 0,
+                "water": 5,
+                "thunder": 15,
+                "ice": 10,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "Wounds",
+              "values": {
+                "cutting": 80,
+                "impact": 80,
+                "pierce": 80,
+                "fire": 0,
+                "water": 0,
+                "thunder": 15,
+                "ice": 10,
+                "dragon": 0,
+                "stun": 0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Left Hind Leg",
+          "states": [
+            {
+              "state": "Default",
+              "values": {
+                "cutting": 45,
+                "impact": 45,
+                "pierce": 45,
+                "fire": 0,
+                "water": 0,
+                "thunder": 20,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "Wounds",
+              "values": {
+                "cutting": 65,
+                "impact": 65,
+                "pierce": 65,
+                "fire": 10,
+                "water": 5,
+                "thunder": 30,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Right Hind Leg",
+          "states": [
+            {
+              "state": "Default",
+              "values": {
+                "cutting": 45,
+                "impact": 45,
+                "pierce": 45,
+                "fire": 0,
+                "water": 0,
+                "thunder": 20,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "Wounds",
+              "values": {
+                "cutting": 65,
+                "impact": 65,
+                "pierce": 65,
+                "fire": 10,
+                "water": 5,
+                "thunder": 30,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Rear",
+          "states": [
+            {
+              "state": "Default",
+              "values": {
+                "cutting": 50,
+                "impact": 50,
+                "pierce": 55,
+                "fire": 10,
+                "water": 5,
+                "thunder": 20,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 0
+              }
+            },
+            {
+              "state": "Wounds",
+              "values": {
+                "cutting": 65,
+                "impact": 65,
+                "pierce": 65,
+                "fire": 10,
+                "water": 5,
+                "thunder": 30,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Tongue",
+          "states": [
+            {
+              "state": "Default",
+              "values": {
+                "cutting": 85,
+                "impact": 85,
+                "pierce": 90,
+                "fire": 10,
+                "water": 5,
+                "thunder": 25,
+                "ice": 15,
+                "dragon": 0,
+                "stun": 100
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

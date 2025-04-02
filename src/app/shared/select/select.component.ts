@@ -19,10 +19,14 @@ export class SelectComponent {
   @Input() disabled: boolean = false;
   @Input() error: string = '';
   inputValue: number = 0;
+  selectedOption: any = null;
 
   @Output() valueChange: EventEmitter<number> = new EventEmitter<number>();
 
   onValueChange() {
     this.valueChange.emit(this.inputValue);
+    this.selectedOption = this.options.find(
+      (option) => option.id === this.inputValue
+    );
   }
 }

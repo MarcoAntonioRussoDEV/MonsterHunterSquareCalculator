@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve && npx json-server db.json --watch",
-    "build": "ng build --output-path=dist --delete-output-path=true && mv dist/browser/* dist/ && rm -rf dist/browser",
+    "start": "concurrently \"npx json-server db.json --watch\" \"ng serve\"",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "deploy": "ng deploy MonsterHunterSquareCalculator --base-href=/MonsterHunterSquareCalculator/",
     "serve:ssr:MonsterHunterSquareCalculator": "node dist/monster-hunter-square-calculator/server/server.mjs"
   },
   "private": true,
@@ -44,6 +45,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.7.2"
+    "typescript": "~5.7.2",
+    "concurrently": "^8.2.0"
   }
 }
