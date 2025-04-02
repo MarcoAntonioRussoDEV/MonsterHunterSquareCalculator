@@ -8,7 +8,7 @@ import { Sharpness } from '../models/sharpness.model';
   providedIn: 'root',
 })
 export class ApiService {
-  private baseUrl = 'http://localhost:4000';
+  private baseUrl = 'http://localhost:3000';
 
   constructor(private http: HttpClient) {}
 

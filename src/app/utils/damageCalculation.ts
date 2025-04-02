@@ -2,6 +2,7 @@ import { Sharpness } from '../models/sharpness.model';
 import { Weapon } from '../models/weapon.model';
 
 const FIXED_VALUE = 400;
+const PROVVISORY_ELEMENTAL_WEAKNESS = 50;
 
 export default function calculateDamage(
   weapon: Weapon,
@@ -26,4 +27,16 @@ export function calculateAffinityDamage(
   sharpness: Sharpness
 ): number {
   return calculateTrueDamage(weapon, damage) * sharpness.multiplier;
+}
+
+export function calculateElementalDamage(
+  elementalDamage: number,
+  sharpness: Sharpness
+): number {
+  return (
+    ((elementalDamage / 10) *
+      sharpness.elementalMultiplier *
+      PROVVISORY_ELEMENTAL_WEAKNESS) /
+    100
+  );
 }

@@ -11,6 +11,12 @@
     placeholder="damage"
     (valueChange)="onDamageChange($event)"
   />
+  <app-input
+    type="number"
+    label="elemental damage"
+    placeholder="elemental damage"
+    (valueChange)="onElementalDamageChange($event)"
+  />
   <app-select
     type="text"
     label="sharpness"
@@ -25,5 +31,6 @@
     (valueChange)="onAffinityChange($event)"
   />
   <button (click)="calculate()" class="btn btn-accent">calcola</button>
-  <div>{{ result }}</div>
+  <div>Damage: {{ result }}</div>
+  <div>Elemental damage: {{ elementalResult }}</div>
 </div>

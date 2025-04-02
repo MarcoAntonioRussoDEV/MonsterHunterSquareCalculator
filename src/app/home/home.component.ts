@@ -6,7 +6,9 @@ import { ApiService } from '../services/api.service';
 import { Weapon } from '../models/weapon.model';
 import { Sharpness } from '../models/sharpness.model';
 import { Subscription } from 'rxjs';
-import calculateDamage from '../utils/damageCalculation';
+import calculateDamage, {
+  calculateElementalDamage,
+} from '../utils/damageCalculation';
 
 @Component({
   selector: 'app-home',
@@ -16,9 +18,11 @@ import calculateDamage from '../utils/damageCalculation';
 })
 export class HomeComponent {
   result: any = 0;
+  elementalResult: any = 0;
   weapons: Weapon[] = [];
   weapon!: Weapon;
   damage: number = 0;
+  elementalDamage: number = 0;
   sharpness!: Sharpness;
   sharpnesses: Sharpness[] = [];
   affinity: number = 0;
@@ -32,6 +36,9 @@ export class HomeComponent {
   }
   onDamageChange(value: string): void {
     this.damage = parseFloat(value);
+  }
+  onElementalDamageChange(value: string): void {
+    this.elementalDamage = parseFloat(value);
   }
   onSharpnessChange(value: number): void {
     this.sharpness =
@@ -47,6 +54,10 @@ export class HomeComponent {
       this.damage,
       this.sharpness,
       this.affinity
+    );
+    this.elementalResult = calculateElementalDamage(
+      this.elementalDamage,
+      this.sharpness
     );
   }
 

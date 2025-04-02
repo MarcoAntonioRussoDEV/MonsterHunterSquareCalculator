@@ -86,12 +86,42 @@
     }
   ],
   "sharpness": [
-    { "id": 1, "name": "Red", "multiplier": 0.5 },
-    { "id": 2, "name": "Orange", "multiplier": 0.75 },
-    { "id": 3, "name": "Yellow", "multiplier": 1.0 },
-    { "id": 4, "name": "Green", "multiplier": 1.05 },
-    { "id": 5, "name": "Blue", "multiplier": 1.2 },
-    { "id": 6, "name": "White", "multiplier": 1.32 },
-    { "id": 7, "name": "Purple", "multiplier": 1.39 }
+    { "id": 1, "name": "Red", "multiplier": 0.5, "elementalMultiplier": 0.25 },
+    {
+      "id": 2,
+      "name": "Orange",
+      "multiplier": 0.75,
+      "elementalMultiplier": 0.5
+    },
+    {
+      "id": 3,
+      "name": "Yellow",
+      "multiplier": 1.0,
+      "elementalMultiplier": 0.75
+    },
+    { "id": 4, "name": "Green", "multiplier": 1.05, "elementalMultiplier": 1 },
+    {
+      "id": 5,
+      "name": "Blue",
+      "multiplier": 1.2,
+      "elementalMultiplier": 1.063
+    },
+    {
+      "id": 6,
+      "name": "White",
+      "multiplier": 1.32,
+      "elementalMultiplier": 1.15
+    },
+    {
+      "id": 7,
+      "name": "Purple",
+      "multiplier": 1.39,
+      "elementalMultiplier": 1.27
+    }
+  ],
+  "monsters": [
+    {
+      "name": "chatacabra"
+    }
   ]
 }
