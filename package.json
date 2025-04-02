@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve && npx json-server db.json --watch",
-    "build": "ng build",
+    "build": "ng build --output-path=dist --delete-output-path=true && mv dist/browser/* dist/ && rm -rf dist/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:MonsterHunterSquareCalculator": "node dist/monster-hunter-square-calculator/server/server.mjs"
